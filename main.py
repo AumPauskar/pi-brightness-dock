@@ -40,7 +40,7 @@ class BrightnessApp:
     def build_menu(self):
         menu = Gtk.Menu()
 
-        for level in [10, 25, 50, 75, 100]:
+        for level in [0, 25, 50, 75, 100]:
             item = Gtk.MenuItem(label=f"{level}%")
             item.connect("activate", self.set_level, level)
             menu.append(item)
