@@ -61,9 +61,9 @@ class BrightnessApp:
         global current_brightness
 
         if direction == Gdk.ScrollDirection.UP:
-            set_brightness(current_brightness + 5)
+            set_brightness(current_brightness + 10)
         elif direction == Gdk.ScrollDirection.DOWN:
-            set_brightness(current_brightness - 5)
+            set_brightness(current_brightness - 10)
 
 if __name__ == "__main__":
     BrightnessApp()
